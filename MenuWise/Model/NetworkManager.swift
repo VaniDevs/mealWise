@@ -11,8 +11,16 @@ import CoreLocation
 
 class NetworkManager: NSObject {
     
-    let defaultSession = URLSession(configuration: .default)
+    var defaultSession: URLSession!
     var dataTask: URLSessionDataTask?
+    
+    override init() {
+        let config = URLSessionConfiguration.default
+        config.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
+        config.urlCache = nil
+        defaultSession = URLSession(configuration: config)
+        super.init()
+    }
     
     func validateOceanWiseLogo(location: CLLocation, completion: @escaping (Bool) -> ()) {
         dataTask?.cancel()

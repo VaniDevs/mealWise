@@ -10,16 +10,17 @@ import UIKit
 
 class InvalidLogoViewController: UIViewController {
 
+    @IBOutlet var button: UIButton!
     @IBOutlet var textLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        button.isHidden = false
     }
     
     @IBAction func ReportButtonTapped(_ sender: Any) {
         textLabel.text = "Thank you, your report has been sent"
-        
+        button.isHidden = true
     }
     
 }

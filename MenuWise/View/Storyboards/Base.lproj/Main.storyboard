@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDA-vE-lcI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDA-vE-lcI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -111,6 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="Gb0-1i-dyp"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="bxh-tg-utD" id="GpZ-A3-WaO"/>
                         <outlet property="textLabel" destination="haU-TA-0cf" id="68l-QG-Sw3"/>
                     </connections>
                 </viewController>
@@ -175,7 +176,7 @@
             </objects>
             <point key="canvasLocation" x="-17" y="-554"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="JsU-Ew-hBR">
             <objects>
                 <viewController id="vnf-zV-i6Y" customClass="ProfileViewController" customModule="MenuWise" customModuleProvider="target" sceneMemberID="viewController">
@@ -425,7 +426,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K8g-0x-4Sk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="5Xc-Kb-X13"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="5Xc-Kb-X13"/>
                     <connections>
                         <outlet property="collectionView" destination="YtO-O8-AUN" id="Vcz-G0-Ibm"/>
                     </connections>
@@ -522,11 +523,11 @@
             </objects>
             <point key="canvasLocation" x="4804" y="88.605697151424295"/>
         </scene>
-        <!--Item-->
+        <!--Camera-->
         <scene sceneID="Lhn-PF-xpf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bes-vy-dqt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oMN-NY-Bjb"/>
+                <navigationController title="Camera" automaticallyAdjustsScrollViewInsets="NO" id="bes-vy-dqt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Camera" id="oMN-NY-Bjb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c31-Dr-4wo">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
